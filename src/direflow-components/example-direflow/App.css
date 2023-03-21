@@ -1,0 +1,76 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.component-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  margin-top: 10px;
+}
+
+.dummy {
+  margin-top: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  /* Set the card height to 100% to fill the grid row */
+}
+
+.card-image {
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  /* Set the card body height to 100% to fill the card */
+}
+
+.card-title {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.card-description {
+  font-size: 16px;
+  margin: 0 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-date,
+.card-slugname {
+  font-size: 14px;
+  margin: 0;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttons > span {
+  padding: 10px;
+  background-color: #ccc;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.dummy__data {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
